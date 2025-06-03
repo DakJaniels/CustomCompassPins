@@ -1,5 +1,5 @@
 # CustomCompassPins
-=================
+
 A library for adding custom pins to the ESO compass. This library provides a robust and performant way to display custom markers on the compass, with automatic handling of map changes, distance scaling, and pin management.
 
 ## Quick Start
