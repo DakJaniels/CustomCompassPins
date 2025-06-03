@@ -1,0 +1,31 @@
+# Changelog
+
+## Version 1.33
+- Updated version number from 1.32 to 1.33
+- Updated AddOnVersion to 33
+- Replaced math library functions with ESO's optimized versions:
+  - Changed math.pi to ZO_PI
+  - Changed math.sqrt to zo_sqrt
+  - Changed math.atan2 to zo_atan2
+- Improved map change detection:
+  - Updated GetMapTileTexture() call to include tileIndex parameter
+  - Enhanced map change callback handling
+- Refactored pin management code:
+  - Split Update function into smaller, more focused functions
+  - Added CalculatePinAngle, PositionPin, and ApplyPinSize helper functions
+  - Improved pin visibility and positioning logic
+- Enhanced error handling:
+  - Changed AddDebugMessage to AddSystemMessage for better error visibility
+  - Added more robust pin creation validation
+- Optimized performance:
+  - Improved pin pooling and reuse
+  - Enhanced distance coefficient calculations
+  - Reduced callback overhead
+- Fixed bug in UpdateVersion function:
+  - Corrected pin data copying logic
+  - Fixed variable reference error in data copying loop
+- Added proper error handling for pin creation and management
+- Enhanced documentation in README.md
+- Added proper license information (CC BY-NC-SA 4.0)
+- Added editor configuration for consistent code style
+- Added git attributes for proper line ending handling
